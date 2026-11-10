@@ -70,7 +70,7 @@ async function deleteKomik(req, res) {
         res.status(200).json({ message: 'Komik deleted successfully' });
     } catch (err) {
         console.error('Error deleting komik:', err.message);
-        res.status(500).json({ error: 'Internal Server Error' });
+        res.status(500).json({ error: 'Failed to delete komik' });
     }
 }
 
